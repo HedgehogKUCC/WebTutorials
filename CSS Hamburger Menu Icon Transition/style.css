@@ -1,0 +1,34 @@
+body {
+  background-color: darkcyan;
+}
+.toggle__icon {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 加上這段可以顯示出白色正方形
+    height: 50px;
+    background-color: aliceblue; 
+  */
+}
+.toggle__icon::before,
+.toggle__icon::after,
+.toggle__icon div {
+  background-color: #fff;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: .3s;
+}
+.toggle__icon:hover::before {
+  transform: translateY(12px) rotate(135deg);
+}
+.toggle__icon:hover::after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.toggle__icon:hover div {
+  transform: scaleY(0);
+}
