@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(206, 228, 236)
+}
+.overlay-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.image-hover {
+  position: relative;
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: whitesmoke;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+}
+.image-hover:hover .overlay-content {
+  height: 20%;
+}
+.overlay-content h3 {
+  padding: 2.5% 3% 0%;
+}
+.overlay-content p {
+  padding: 2.5% 3% 2.5%;
+}
+
+/***
+
+CSS padding 基本語法範例
+
+1. padding: 上 右 下 左;
+2. padding: 上下 左右;
+3. padding: 上 左右 下;
+4. padding: 四個邊同樣値;
+
+1. padding: 10px 15px 10px 15px;
+2. padding: 10px 15px;
+3. padding: 10px 15px 15px;
+4. padding: 10px;
+
+***/
