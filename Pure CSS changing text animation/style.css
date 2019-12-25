@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.text__content {
+  position: absolute;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.text__content h2 {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-size: 5rem;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+}
+.text__content h2 span::before {
+  content: '';
+  animation: animate infinite 8s;
+}
+@keyframes animate {
+  0% {
+    content: 'Robbin';
+  }
+  20% {
+    content: 'a Cat';
+  }
+  40% {
+    content: 'Single';
+  }
+  60% {
+    content: 'yours';
+  }
+  80% {
+    content: 'an apple';
+  }
+  100% {
+    content: 'an engineer';
+  }
+}
