@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.typewriter h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3.5rem;
+
+  /* Ensures the content is not revealed until the animation */
+  overflow: hidden;
+
+  /* The typewriter cursor */
+  border-right: .15rem solid orange;
+
+  /* Keeps the content on a sigle line */
+  white-space: nowrap;
+
+  /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto;
+
+  /* Adjust as needed */
+  letter-spacing: .15rem;
+
+  animation:
+    typing 3.5s steps(30, end),
+    blink__caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0%; }
+  to { width: 30%; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink__caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
